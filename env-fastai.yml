@@ -1,0 +1,79 @@
+# conda create --name fastai python=3.6 -y
+# conda install cudatoolkit=9.0 pytorch=1.0.0 torchvision -c pytorch -y
+# conda install fastai pillow-simd -c fastai -c scw -y
+# conda env update -f env-fastai.yml
+name: fastai
+channels:
+- pytorch
+- conda-forge
+- fastai
+- defaults
+dependencies:
+- python=3.6
+- bleach
+- decorator
+- entrypoints
+- expat
+- html5lib
+- ipykernel
+- ipython
+- ipython_genutils
+- ipywidgets
+- jedi
+- jinja2
+- jsonschema
+- jupyter
+- jupyter_client
+- jupyter_console
+- jupyter_core
+- jupyterlab
+#- conda-forge::jupyter_contrib_nbextensions
+- libiconv
+- libsodium
+- libxml2
+- markupsafe
+- mistune
+- nbformat
+- notebook
+- openssl
+- pandas
+- pandocfilters
+- path.py
+- patsy
+- pcre
+- pexpect
+- pickleshare
+- prompt_toolkit
+- pygments
+- pyzmq
+- qtconsole
+- seaborn
+- setuptools
+- simplegeneric
+- statsmodels
+- testfixtures
+- testpath
+- traitlets
+- wcwidth
+- widgetsnbextension
+- xz
+- zeromq
+- bcolz
+- prompt_toolkit
+#- pytest
+- cython
+- pip:
+  - torchtext
+  - opencv-python
+  - isoweek
+  - pandas_summary
+  - graphviz
+  - sklearn_pandas
+  - feather-format
+  - plotnine
+  - kaggle-cli
+  - ipywidgets
+  - nbconvert
+  - PyHamcrest
+  - pdpbox
+  - scikit-misc
